@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="QrTools" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        <Image Name="QrImage" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="399" Source="D:\Code\Web\WX-H5-ShareCount\dist\img\logo.82b9c7a5.png"/>
+        <Image Name="QrImage" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="399" Source="Scanner.png"/>
         <Button Name="CreateButton" Content="Create" HorizontalAlignment="Left" Margin="472,334,0,0" VerticalAlignment="Top" Width="75" Click="Create_Click"/>
         <Button Name="ScanerButton" Content="Scaner" HorizontalAlignment="Left" Margin="681,334,0,0" VerticalAlignment="Top" Width="75" Click="Scaner_Click"/>
-        <TextBox x:Name="UrlTextBox" HorizontalAlignment="Left" Height="281" Margin="456,10,0,0" TextWrapping="Wrap" Text="https://ns96.com" VerticalAlignment="Top" Width="326"/>
+        <TextBox x:Name="UrlTextBox" HorizontalAlignment="Left" Height="281" Margin="456,10,0,0" TextWrapping="Wrap" Text="QR Image Info Content" VerticalAlignment="Top" Width="326"/>
 
     </Grid>
 </Window>

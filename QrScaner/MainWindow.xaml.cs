@@ -19,10 +19,18 @@ namespace QrScaner
         {
             InitializeComponent();
         }
-        private void Window_Loaded(object sender, RoutedEventArgs e)        {            BarcodeWriter writer = CreateQr();
-            Bitmap map = writer.Write(UrlTextBox.Text);            QrImage.Source = Change2Image(map);            map.Dispose();        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //BarcodeWriter writer = CreateQr();
+
+            //Bitmap map = writer.Write(UrlTextBox.Text);
+            //QrImage.Source = Change2Image(map);
+            //map.Dispose();
+        }
+
         private void Scaner_Click(object sender, RoutedEventArgs e)
         {
+            QrImage.Source = new BitmapImage(new Uri("Scanner.png", UriKind.Relative)); 
             foreach (Screen screen in Screen.AllScreens)
             {
                 using (Bitmap fullImage = new Bitmap(screen.Bounds.Width,
